@@ -48,7 +48,8 @@ In your `~/.bashrc` or `~/.zshrc`, add:
 if [ -f "$HOME/.config/lazy-ssh.sh" ]; then
   . "$HOME/.config/lazy-ssh.sh"
 fi
-```<your-user>
+```
+
 
 Then reload your shell:
 
