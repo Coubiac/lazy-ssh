@@ -63,7 +63,7 @@ update_ssh_entry() {
   ' "$ssh_config" > "$tmp" && mv "$tmp" "$ssh_config"
 }
 
-lazy-ssh() {
+lazy_ssh() {
   local args=("$@")
 
   if [[ ${#args[@]} -eq 0 ]]; then
@@ -106,7 +106,7 @@ lazy-ssh() {
   if [[ -z "$target" ]]; then
     command ssh "$@"
     return
-  }
+  fi
 
   local user host
   if [[ "$target" == *"@"* ]]; then
