@@ -206,6 +206,11 @@ Contributions are welcome:
 
 Fork, open issues, and PRs are all appreciated.
 
+## Notes
+
+The initial version of this script was drafted with the help of an AI assistant, then reviewed, simplified and tested manually.
+
+
 ## License
 
 This project is released under the Unlicense (public domain).
