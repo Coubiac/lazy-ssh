@@ -123,7 +123,8 @@ lazy_ssh() {
   [[ -f "$ssh_config" ]] || touch "$ssh_config"
 
   local host_re
-  host_re=$(printf '%s\n' "$host" | sed "s/[][.^$*+?{}|()\\/]/\\\\&/g")
+  host_re=$(printf '%s\n' "$host" | sed 's/[][\.\\^$*+?{}|()\/]/\\&/g')
+
 
   if grep -qE "^Host[[:space:]].*${host_re}([[:space:]]|\$)" "$ssh_config"; then
     local user_for_update=""
